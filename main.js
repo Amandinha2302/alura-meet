@@ -16,6 +16,13 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++) {
 }
 contador=contador+1;
 
+tecla.onkeydown=function(){
+if(evento.code=='Enter')
+tecla.classlist.add('ativa')
+}
+tecla.onkeyup=function(){
+tecla.classlist.remove('ativa')
+}
 }
     
 
